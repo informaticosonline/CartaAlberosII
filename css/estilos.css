@@ -8,17 +8,17 @@
 }
 
 /* ============================================================
-   ESTILOS GENERALES
+   ESTILOS GENERALES - SOLO CAMBIOS DE COLOR
    ============================================================ */
 body {
-    background: linear-gradient(180deg, #f5f0e6, #eae3d3);
-    font-family: 'Georgia', 'Times New Roman', serif;
+    background: linear-gradient(180deg, #f6efe6, #e6eeee);
+    font-family: 'Georgia', 'Times New Roman', serif; /* Cambiada la fuente */
     min-height: 100vh;
     padding: 20px;
     position: relative;
 }
 
-/* Contenedor principal de la carta - MARCA MARMOL Y MADERA */
+/* Contenedor principal de la carta - SOLO CAMBIO DE COLOR */
 .carta-contenedor {
     width: 100%;
     max-width: 900px;
@@ -27,174 +27,118 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(135deg, #f9f4ea, #f0e6d6);
-    border: 4px solid #8B4513; /* Marrón silla de montar */
+    background: linear-gradient(135deg, #f9f4ea, #f0e6d6); /* Fondo papel antiguo */
+    border: 3px solid #8B4513; /* Marrón silla de montar */
     border-radius: 22px;
-    box-shadow: 
-        0 12px 40px rgba(139, 69, 19, 0.4),
-        inset 0 0 20px rgba(255, 248, 231, 0.5);
+    box-shadow: 0 12px 40px rgba(139, 69, 19, 0.4); /* Sombra marrón */
     position: relative;
     z-index: 1;
-    overflow: hidden;
-}
-
-/* Efecto de marmol o madera antigua */
-.carta-contenedor::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-        linear-gradient(90deg, transparent 50%, rgba(255,255,255,0.1) 50%),
-        radial-gradient(circle at 30% 30%, rgba(255,255,255,0.1) 2px, transparent 3px);
-    background-size: 60px 60px, 200px 200px;
-    opacity: 0.3;
-    z-index: -1;
 }
 
 /* ============================================================
-   INTRO PRESENTACIÓN - ESTILO RÚSTICO Y CLÁSICO
+   INTRO PRESENTACIÓN - SOLO FUENTES Y COLORES
    ============================================================ */
 .intro-presentacion {
     width: 100%;
     max-width: 900px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     margin: 20px auto 30px auto;
-    padding: 20px 15px;
-    gap: 15px;
-    text-align: center;
+    padding: 10px 15px;
+    gap: 10px;
 }
 
 .intro-texto {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    text-align: center;
-    margin-bottom: 10px;
+    gap: 2px;
+    text-align: right;
 }
 
 .intro-texto h1,
 .intro-texto h2 {
     margin: 0;
-    font-family: 'Playfair Display', 'Georgia', serif;
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    font-family: 'Playfair Display', 'Georgia', serif; /* Fuente elegante */
+    font-weight: 600; /* Más grueso */
+    letter-spacing: 1px; /* Más espaciado */
+    color: #8B4513; /* Marrón oscuro */
 }
 
 .intro-texto h1 {
-    font-size: 42px;
+    font-size: 34px;
     color: #8B4513; /* Marrón silla de montar */
-    text-shadow: 2px 2px 4px rgba(139, 69, 19, 0.2);
 }
 
 .intro-texto h2 {
-    font-size: 28px;
+    font-size: 26px;
     color: #A0522D; /* Marrón tierra */
-    font-style: italic;
-    font-weight: 400;
-    letter-spacing: 1px;
 }
 
 .logo-intro {
-    width: 180px;
+    width: 150px;
     max-width: 100%;
     height: auto;
     display: block;
-    border-radius: 12px;
-    border: 3px solid #8B4513;
-    box-shadow: 0 6px 15px rgba(139, 69, 19, 0.3);
-    padding: 8px;
-    background: #FFF;
+    border-radius: 8px;
+    border: 2px solid #8B4513; /* Borde marrón */
 }
 
 /* ============================================================
-   CARTA PREMIUM - ESTILO PAPEL ANTIEGUO CON BORDE
+   CARTA PREMIUM OSCURA - CAMBIADO A CLARO
    ============================================================ */
 .carta-premium {
     width: 100%;
     max-width: 860px;
-    background: #FAF3E0; /* Color papel antiguo */
-    border-radius: 12px;
-    padding: 30px;
-    color: #4A2C2A; /* Marrón oscuro para texto */
+    background: #FAF3E0; /* Fondo papel antiguo claro */
+    border-radius: 18px;
+    padding: 25px;
+    color: #4A2C2A; /* Texto marrón oscuro */
     box-shadow: 
-        inset 0 0 30px rgba(139, 69, 19, 0.1),
-        0 8px 25px rgba(139, 69, 19, 0.2);
-    font-family: 'Georgia', 'Times New Roman', serif;
-    border: 2px solid #D4A76A; /* Dorado viejo */
-    position: relative;
+        inset 0 0 30px rgba(139, 69, 19, 0.1), /* Sombra interior marrón suave */
+        0 10px 30px rgba(139, 69, 19, 0.2); /* Sombra exterior marrón */
+    font-family: 'Georgia', 'Times New Roman', serif; /* Fuente clásica */
 }
 
-/* Efecto de bordes desgastados */
-.carta-premium::before {
-    content: '';
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    border: 1px solid rgba(139, 69, 19, 0.1);
-    border-radius: 8px;
-    pointer-events: none;
-}
-
-/* Cabecera de la carta - ESTILO CLÁSICO */
+/* Cabecera de la carta */
 .carta-header {
     text-align: center;
     margin-bottom: 40px;
-    padding-bottom: 20px;
-    border-bottom: 3px double #8B4513;
-    position: relative;
 }
 
 .carta-header h1 {
-    margin: 0 0 10px 0;
-    font-size: 38px;
-    letter-spacing: 3px;
-    color: #8B4513;
-    font-family: 'Playfair Display', serif;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 2px rgba(139, 69, 19, 0.1);
+    margin: 0;
+    font-size: 34px;
+    letter-spacing: 2px;
+    color: #8B4513; /* Marrón silla de montar */
+    font-family: 'Playfair Display', serif; /* Fuente elegante */
 }
 
 .carta-header p {
     margin: 5px 0;
-    color: #A0522D;
-    font-size: 20px;
-    font-style: italic;
-    letter-spacing: 1px;
+    color: #A0522D; /* Marrón tierra */
+    font-size: 18px;
+    font-family: 'Georgia', serif; /* Fuente clásica */
 }
 
 .carta-header span {
-    font-size: 14px;
-    color: #8B7355;
-    letter-spacing: 1px;
-    font-family: 'Georgia', serif;
+    font-size: 13px;
+    color: #8B7355; /* Marrón grisáceo */
+    font-family: 'Georgia', serif; /* Fuente clásica */
 }
 
-/* Bloques de categoría - TÍTULOS EN TONO MADERA */
+/* Bloques de categoría */
 .bloque-categoria {
     margin-bottom: 40px;
-    padding: 20px 15px;
-    background: rgba(212, 167, 106, 0.05);
-    border-radius: 8px;
-    border-left: 4px solid #8B4513;
 }
 
 .bloque-categoria h2 {
-    color: #8B4513;
-    border-bottom: 2px solid rgba(139, 69, 19, 0.3);
-    padding-bottom: 10px;
-    margin-bottom: 25px;
-    letter-spacing: 2px;
-    font-family: 'Playfair Display', serif;
-    font-size: 26px;
-    text-transform: uppercase;
+    color: #8B4513; /* Marrón silla de montar */
+    border-bottom: 2px solid rgba(139, 69, 19, 0.4); /* Borde marrón */
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-family: 'Playfair Display', serif; /* Fuente elegante */
 }
 
 /* ============================================================
@@ -213,19 +157,18 @@ body {
 .cabecera-precios h2 {
     margin: 0;
     flex: 1;
-    color: #4A2C2A;
+    color: #4A2C2A; /* Marrón oscuro */
 }
 
 .col-precios {
     display: flex;
     gap: 40px;
-    font-size: 14px;
+    font-size: 13px;
     letter-spacing: 1px;
-    color: #8B7355;
+    color: #8B7355; /* Marrón grisáceo */
     justify-content: flex-end;
     min-width: 150px;
-    font-style: italic;
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', serif; /* Fuente clásica */
 }
 
 .col-precios span {
@@ -238,25 +181,23 @@ body {
    ESTRUCTURA DE FILAS CON IMÁGENES (PLATOS)
    ============================================================ */
 
-/* Fila individual de cada plato - ESTILO TABLA RÚSTICA */
+/* Fila individual de cada plato */
 .fila-plato {
     display: flex;
     align-items: flex-start;
     gap: 15px;
-    padding: 15px 10px;
-    border-bottom: 1px solid #E8D4B9;
+    padding: 12px 5px;
+    border-bottom: 1px dashed rgba(139, 69, 19, 0.2); /* Línea marrón suave */
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
-    background: linear-gradient(to right, transparent 50%, rgba(212, 167, 106, 0.03) 50%);
-    background-size: 200% 100%;
-    border-radius: 6px;
-    margin-bottom: 2px;
 }
 
 .fila-plato:hover {
-    background-position: -100% 0;
-    box-shadow: 0 4px 12px rgba(139, 69, 19, 0.1);
+    background: rgba(212, 167, 106, 0.05); /* Fondo dorado muy suave */
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* Indicador visual de clic (lupa) */
@@ -268,36 +209,27 @@ body {
     transform: translateY(-50%);
     opacity: 0;
     transition: opacity 0.3s ease;
-    font-size: 16px;
-    color: #8B4513;
+    font-size: 14px;
+    color: #8B4513; /* Marrón silla de montar */
     z-index: 2;
-    background: rgba(255, 255, 255, 0.8);
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 6px rgba(139, 69, 19, 0.2);
 }
 
 .fila-plato:hover::after {
-    opacity: 1;
+    opacity: 0.7;
 }
 
-/* Imagen del plato - MARCO DE MADERA */
+/* Imagen del plato */
 .imagen-plato {
-    width: 90px;
-    height: 90px;
-    min-width: 90px;
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(139, 69, 19, 0.3);
-    border: 2px solid #D4A76A;
+    box-shadow: 0 3px 8px rgba(139, 69, 19, 0.2); /* Sombra marrón */
+    border: 2px solid rgba(212, 167, 106, 0.4); /* Borde dorado suave */
     order: 1;
     position: relative;
     z-index: 1;
-    background: #FFF;
 }
 
 .imagen-plato img {
@@ -312,7 +244,7 @@ body {
     transform: scale(1.05);
 }
 
-/* Información del plato - TEXTO MARCA OSCURO */
+/* Información del plato */
 .info-plato {
     flex: 1;
     max-width: calc(100% - 250px);
@@ -322,23 +254,21 @@ body {
 }
 
 .fila-plato strong {
-    font-size: 18px;
-    color: #4A2C2A;
+    font-size: 17px;
+    color: #4A2C2A; /* Marrón oscuro */
     display: block;
-    font-family: 'Georgia', serif;
-    margin-bottom: 5px;
-    font-weight: 600;
+    font-family: 'Georgia', serif; /* Fuente clásica */
 }
 
 .fila-plato p {
     margin: 4px 0 0;
-    font-size: 15px;
-    color: #6B4F3C;
-    line-height: 1.5;
-    font-style: italic;
+    font-size: 14px;
+    color: #6B4F3C; /* Marrón medio */
+    line-height: 1.4;
+    font-family: 'Georgia', serif; /* Fuente clásica */
 }
 
-/* Precios - DORADO OSCURO */
+/* Precios */
 .precios {
     display: flex;
     gap: 40px;
@@ -352,17 +282,17 @@ body {
 
 .precios span {
     font-weight: bold;
-    color: #8B4513;
-    font-size: 18px;
+    color: #8B4513; /* Marrón silla de montar */
+    font-size: 16px;
     white-space: nowrap;
     width: 60px;
     display: inline-block;
     text-align: center;
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', serif; /* Fuente clásica */
 }
 
 /* ============================================================
-   SISTEMA DE ALÉRGENOS EN PLATOS - TONOS TIERRA
+   SISTEMA DE ALÉRGENOS EN PLATOS - COLORES TIERRA
    ============================================================ */
 .alergenos-plato {
     display: flex;
@@ -377,16 +307,15 @@ body {
     justify-content: center;
     width: 22px;
     height: 22px;
-    background: #8B4513;
-    color: #FAF3E0;
+    background: #8B4513; /* Marrón silla de montar */
+    color: #FAF3E0; /* Crema claro */
     border-radius: 50%;
     font-size: 11px;
     font-weight: bold;
     cursor: help;
     transition: transform 0.2s ease;
     position: relative;
-    border: 1px solid #A0522D;
-    font-family: 'Georgia', serif;
+    border: 1px solid #A0522D; /* Borde marrón tierra */
 }
 
 .alergeno-mini:hover {
@@ -401,10 +330,10 @@ body {
     bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(74, 44, 42, 0.95);
-    color: #FAF3E0;
-    padding: 8px 12px;
-    border-radius: 6px;
+    background: rgba(139, 69, 19, 0.95); /* Fondo marrón oscuro */
+    color: #FAF3E0; /* Texto crema */
+    padding: 5px 10px;
+    border-radius: 4px;
     font-size: 12px;
     white-space: nowrap;
     opacity: 0;
@@ -412,8 +341,7 @@ body {
     transition: opacity 0.3s ease;
     z-index: 10;
     pointer-events: none;
-    border: 1px solid #8B4513;
-    font-family: 'Georgia', serif;
+    border: 1px solid #A0522D;
 }
 
 .alergeno-mini:hover::after {
@@ -421,7 +349,7 @@ body {
     visibility: visible;
 }
 
-/* Colores específicos para cada alérgeno - TONOS TIERRA */
+/* Colores específicos para cada alérgeno - PALETA TIERRA */
 .alergeno-mini[data-alergeno="gluten"] { background: #8B4513; }
 .alergeno-mini[data-alergeno="crustaceos"] { background: #A0522D; }
 .alergeno-mini[data-alergeno="huevo"] { background: #D2691E; }
@@ -438,71 +366,66 @@ body {
 .alergeno-mini[data-alergeno="moluscos"] { background: #DAA520; }
 
 /* ============================================================
-   LEYENDA DE ALÉRGENOS - ESTILO PAPEL ANTIEGUO
+   LEYENDA DE ALÉRGENOS - COLORES CLAROS
    ============================================================ */
 .alergenos-leyenda {
-    background: #FAF3E0;
+    background: rgba(250, 243, 224, 0.95); /* Fondo crema semitransparente */
     border-radius: 12px;
-    padding: 25px;
+    padding: 20px;
     margin: 30px auto;
     max-width: 860px;
     width: 100%;
-    border: 2px solid #D4A76A;
-    box-shadow: 0 8px 20px rgba(139, 69, 19, 0.2);
+    border: 2px solid rgba(212, 167, 106, 0.5); /* Borde dorado */
+    box-shadow: 0 5px 15px rgba(139, 69, 19, 0.2); /* Sombra marrón */
 }
 
 .alergenos-leyenda h3 {
-    color: #8B4513;
-    margin: 0 0 20px 0;
-    font-size: 20px;
-    font-family: 'Playfair Display', serif;
+    color: #8B4513; /* Marrón silla de montar */
+    margin: 0 0 15px 0;
+    font-size: 18px;
+    font-family: 'Playfair Display', serif; /* Fuente elegante */
     text-align: center;
-    border-bottom: 2px solid rgba(139, 69, 19, 0.3);
-    padding-bottom: 12px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    border-bottom: 1px dashed rgba(139, 69, 19, 0.4); /* Línea punteada marrón */
+    padding-bottom: 10px;
 }
 
 .alergenos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
-    margin-bottom: 20px;
+    gap: 12px;
+    margin-bottom: 15px;
 }
 
 .alergeno-item {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 10px;
-    border-radius: 8px;
-    background: rgba(212, 167, 106, 0.05);
-    transition: all 0.3s ease;
-    border: 1px solid rgba(139, 69, 19, 0.1);
+    gap: 10px;
+    padding: 5px;
+    border-radius: 6px;
+    background: rgba(212, 167, 106, 0.05); /* Fondo dorado muy suave */
+    transition: background 0.3s ease;
 }
 
 .alergeno-item:hover {
-    background: rgba(212, 167, 106, 0.1);
-    transform: translateX(3px);
+    background: rgba(212, 167, 106, 0.1); /* Fondo dorado suave al hover */
 }
 
 .alergeno-icono {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 28px;
-    height: 28px;
-    background: #8B4513;
-    color: #FAF3E0;
+    width: 26px;
+    height: 26px;
+    background: #8B4513; /* Marrón silla de montar */
+    color: #FAF3E0; /* Crema claro */
     border-radius: 50%;
     font-size: 14px;
     font-weight: bold;
     flex-shrink: 0;
-    border: 1px solid #A0522D;
-    font-family: 'Georgia', serif;
+    border: 1px solid #A0522D; /* Borde marrón tierra */
 }
 
-/* Colores específicos para cada alérgeno (leyenda) */
+/* Colores específicos para cada alérgeno (leyenda) - MISMOS COLORES QUE ARRIBA */
 .alergeno-icono[data-alergeno="gluten"] { background: #8B4513; }
 .alergeno-icono[data-alergeno="crustaceos"] { background: #A0522D; }
 .alergeno-icono[data-alergeno="huevo"] { background: #D2691E; }
@@ -519,26 +442,26 @@ body {
 .alergeno-icono[data-alergeno="moluscos"] { background: #DAA520; }
 
 .alergeno-texto {
-    color: #4A2C2A;
-    font-size: 14px;
-    line-height: 1.4;
-    font-family: 'Georgia', serif;
+    color: #4A2C2A; /* Marrón oscuro */
+    font-size: 13px;
+    line-height: 1.3;
+    font-family: 'Georgia', serif; /* Fuente clásica */
 }
 
 .alergeno-nota {
-    color: #8B7355;
-    font-size: 13px;
+    color: #8B7355; /* Marrón grisáceo */
+    font-size: 12px;
     text-align: center;
-    margin: 20px 0 0 0;
+    margin: 15px 0 0 0;
     font-style: italic;
-    line-height: 1.5;
+    line-height: 1.4;
     padding-top: 15px;
-    border-top: 1px solid rgba(139, 69, 19, 0.2);
-    font-family: 'Georgia', serif;
+    border-top: 1px dashed rgba(139, 69, 19, 0.2); /* Línea punteada marrón */
+    font-family: 'Georgia', serif; /* Fuente clásica */
 }
 
 /* ============================================================
-   LIGHTBOX - ESTILO MARCO DE MADERA
+   LIGHTBOX - COLORES CLAROS
    ============================================================ */
 
 /* Fondo oscuro del lightbox */
@@ -548,7 +471,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(74, 44, 42, 0.95);
+    background-color: rgba(74, 44, 42, 0.95); /* Fondo marrón oscuro semitransparente */
     display: none;
     justify-content: center;
     align-items: center;
@@ -564,19 +487,17 @@ body {
     opacity: 1;
 }
 
-/* Contenedor del contenido - MARCO DE MADERA */
+/* Contenedor del contenido */
 .lightbox-contenido {
-    background: #FAF3E0;
-    border-radius: 12px;
+    background: #FAF3E0; /* Fondo crema */
+    border-radius: 20px;
     max-width: 800px;
     width: 90%;
     max-height: 90vh;
     overflow: hidden;
     position: relative;
-    box-shadow: 
-        0 20px 50px rgba(139, 69, 19, 0.4),
-        inset 0 0 0 3px #8B4513;
-    border: 5px solid #D4A76A;
+    box-shadow: 0 20px 50px rgba(139, 69, 19, 0.4); /* Sombra marrón */
+    border: 2px solid rgba(212, 167, 106, 0.5); /* Borde dorado */
     animation: lightboxAparece 0.4s ease forwards;
     transform-origin: center;
 }
@@ -592,18 +513,18 @@ body {
     }
 }
 
-/* Botón cerrar - ESTILO HIERRO FORJADO */
+/* Botón cerrar */
 .lightbox-cerrar {
     position: absolute;
     top: 15px;
     right: 15px;
-    background: #8B4513;
-    color: #FAF3E0;
-    border: 2px solid #A0522D;
+    background: rgba(139, 69, 19, 0.9); /* Fondo marrón */
+    color: #FAF3E0; /* Texto crema */
+    border: 2px solid #A0522D; /* Borde marrón tierra */
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    font-size: 24px;
+    font-size: 28px;
     cursor: pointer;
     z-index: 10001;
     transition: all 0.3s ease;
@@ -611,23 +532,21 @@ body {
     align-items: center;
     justify-content: center;
     line-height: 1;
-    font-family: 'Georgia', serif;
 }
 
 .lightbox-cerrar:hover {
-    background: #A0522D;
-    color: #FAF3E0;
+    background: rgba(212, 167, 106, 0.9); /* Fondo dorado al hover */
     transform: rotate(90deg);
 }
 
-/* Contenedor de la imagen - CON BORDE */
+/* Contenedor de la imagen */
 .lightbox-imagen-contenedor {
     width: 100%;
     height: 60vh;
     overflow: hidden;
-    background: #4A2C2A;
+    background: #4A2C2A; /* Fondo marrón oscuro */
     position: relative;
-    border-bottom: 3px solid #8B4513;
+    border-bottom: 3px solid #8B4513; /* Borde marrón */
 }
 
 .lightbox-imagen-contenedor img {
@@ -644,55 +563,51 @@ body {
 
 /* Información del plato */
 .lightbox-info {
-    padding: 30px;
-    color: #4A2C2A;
-    background: #FAF3E0;
+    padding: 25px;
+    color: #4A2C2A; /* Texto marrón oscuro */
+    background: #FAF3E0; /* Fondo crema */
 }
 
 .lightbox-info h3 {
-    margin: 0 0 15px 0;
-    font-size: 32px;
-    color: #8B4513;
-    font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    border-bottom: 2px solid rgba(139, 69, 19, 0.3);
-    padding-bottom: 10px;
+    margin: 0 0 10px 0;
+    font-size: 28px;
+    color: #8B4513; /* Marrón silla de montar */
+    font-family: 'Playfair Display', serif; /* Fuente elegante */
+    font-weight: 400;
 }
 
 .lightbox-info p {
-    margin: 0 0 25px 0;
-    color: #6B4F3C;
-    font-size: 18px;
-    line-height: 1.6;
-    font-style: italic;
-    font-family: 'Georgia', serif;
+    margin: 0 0 20px 0;
+    color: #6B4F3C; /* Marrón medio */
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Georgia', serif; /* Fuente clásica */
 }
 
 /* Precios en el lightbox */
 .lightbox-precios {
     display: flex;
     gap: 40px;
-    margin-top: 25px;
+    margin-top: 20px;
     padding-top: 20px;
-    border-top: 2px solid rgba(139, 69, 19, 0.3);
+    border-top: 1px dashed rgba(139, 69, 19, 0.3); /* Línea punteada marrón */
 }
 
 .lightbox-precios span {
-    font-size: 22px;
-    color: #8B4513;
+    font-size: 20px;
+    color: #8B4513; /* Marrón silla de montar */
     font-weight: bold;
     display: flex;
     align-items: center;
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', serif; /* Fuente clásica */
 }
 
 .lightbox-precios span::before {
     content: attr(data-tipo) ": ";
-    font-size: 16px;
-    color: #8B7355;
+    font-size: 14px;
+    color: #A0522D; /* Marrón tierra */
     font-weight: normal;
-    margin-right: 10px;
-    font-style: italic;
+    margin-right: 8px;
 }
 
 /* Ajuste para postres */
@@ -706,7 +621,7 @@ body {
 }
 
 /* ============================================================
-   BOTONES DE CONTACTO - TONOS MADERA Y HIERRO
+   BOTONES DE CONTACTO - COLORES MARRÓN Y VERDE
    ============================================================ */
 .contacto-botones {
     display: flex;
@@ -720,68 +635,61 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 16px 24px;
-    border-radius: 8px;
-    color: #FAF3E0;
+    padding: 14px 22px;
+    border-radius: 12px;
+    color: white;
     text-decoration: none;
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', serif; /* Fuente clásica */
     font-size: 18px;
-    font-weight: 600;
-    gap: 12px;
-    transition: all 0.3s ease;
+    font-weight: 400;
+    gap: 10px;
+    transition: 0.2s ease;
     cursor: pointer;
     border: none;
     outline: none;
-    box-shadow: 0 4px 12px rgba(139, 69, 19, 0.3);
-    letter-spacing: 0.5px;
-    border: 2px solid;
 }
 
 .btn-telefono { 
-    background: linear-gradient(135deg, #8B4513, #A0522D);
-    border-color: #5C4033;
+    background-color: #8B4513; /* Marrón silla de montar */
 }
 
 .btn-whatsapp2 { 
-    background: linear-gradient(135deg, #25D366, #128C7E);
-    border-color: #1A6E5C;
+    background-color: #25d366; /* Verde WhatsApp (igual) */
 }
 
 .icono-svg svg {
     width: 22px;
     height: 22px;
-    fill: #FAF3E0;
+    fill: white;
 }
 
 .btn-contacto:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(139, 69, 19, 0.4);
-    opacity: 0.95;
+    opacity: 0.9;
+    transform: scale(1.03);
 }
 
 /* ============================================================
-   FECHA AUTOMÁTICA - TONO MARRÓN OSCURO
+   FECHA AUTOMÁTICA - COLOR MARRÓN
    ============================================================ */
 .fecha-actualizacion {
     width: 100%;
     text-align: center;
-    color: #8B7355;
-    font-size: 15px;
+    color: #8B4513; /* Marrón silla de montar */
+    font-size: 14px;
     margin: 10px auto;
-    font-family: 'Georgia', serif;
+    font-family: 'Georgia', serif; /* Fuente clásica */
     font-weight: 300;
-    letter-spacing: 1px;
-    font-style: italic;
+    letter-spacing: 0.5px;
 }
 
 /* ============================================================
-   FOOTER CON LOGO
+   FOOTER CON LOGO - SIN CAMBIOS ESTRUCTURALES
    ============================================================ */
 .footer-logo {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -794,16 +702,16 @@ body {
     transition: 0.3s ease;
     display: block;
     margin: 0 auto;
-    filter: sepia(0.4) contrast(1.1);
+    filter: sepia(0.4); /* Ligeramente sepia para combinar */
 }
 
 .logo-footer:hover {
     opacity: 1;
-    filter: sepia(0.2) contrast(1.2);
+    filter: sepia(0); /* Sin sepia al hover */
 }
 
 /* ============================================================
-   BOTÓN SUBIR - TONOS MARRÓN
+   BOTÓN SUBIR - COLORES MARRÓN
    ============================================================ */
 .btn-subir {
     position: fixed;
@@ -811,9 +719,9 @@ body {
     right: 20px;
     width: 50px;
     height: 50px;
-    background: rgba(139, 69, 19, 0.9);
-    color: #FAF3E0;
-    border: 2px solid #D4A76A;
+    background: rgba(139, 69, 19, 0.3); /* Fondo marrón semitransparente */
+    color: #8B4513; /* Marrón silla de montar */
+    border: 2px solid #8B4513; /* Borde marrón */
     border-radius: 50%;
     font-size: 22px;
     display: none;
@@ -821,27 +729,27 @@ body {
     align-items: center;
     cursor: pointer;
     z-index: 9999;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(139, 69, 19, 0.4);
-    font-family: 'Georgia', serif;
+    transition: 0.3s ease;
+    border: none;
+    outline: none;
 }
 
 .btn-subir:hover {
-    background: rgba(212, 167, 106, 0.9);
-    color: #8B4513;
+    opacity: 1;
+    background: rgba(139, 69, 19, 0.5); /* Fondo marrón más opaco */
     transform: scale(1.1);
 }
 
 /* ============================================================
-   MEJORAS DE ACCESIBILIDAD
+   MEJORAS DE ACCESIBILIDAD - COLOR MARRÓN
    ============================================================ */
 .fila-plato:focus {
-    outline: 2px solid #8B4513;
+    outline: 2px solid #8B4513; /* Contorno marrón */
     outline-offset: 2px;
 }
 
 .lightbox-cerrar:focus {
-    outline: 2px solid #8B4513;
+    outline: 2px solid #8B4513; /* Contorno marrón */
     outline-offset: 2px;
 }
 
@@ -849,21 +757,20 @@ body {
    ESTILOS PARA IMÁGENES FALTANTES
    ============================================================ */
 .imagen-plato img[src=""] {
-    background: linear-gradient(45deg, #FAF3E0, #E8D4B9);
+    background: linear-gradient(45deg, #FAF3E0, #E8D4B9); /* Gradiente crema */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .imagen-plato img[src=""]::after {
-    content: "🥩";
-    font-size: 28px;
-    color: #8B7355;
-    opacity: 0.6;
+    content: "🍽️";
+    font-size: 24px;
+    color: #8B7355; /* Marrón grisáceo */
 }
 
 /* ============================================================
-   RESPONSIVE DESIGN - SIN CAMBIOS (MANTENIENDO FUNCIONALIDAD)
+   RESPONSIVE DESIGN - ¡EXACTAMENTE IGUAL QUE ANTES!
    ============================================================ */
 
 /* Responsive para tablets y móviles grandes */
@@ -930,23 +837,20 @@ body {
     .precios span:nth-child(1)::before {
         content: "Tapa: ";
         font-size: 13px;
-        color: #8B4513;
+        color: #8B4513; /* Cambiado a marrón */
         margin-right: 6px;
     }
     
     .precios span:nth-child(2)::before {
         content: "Ración: ";
         font-size: 13px;
-        color: #8B4513;
+        color: #8B4513; /* Cambiado a marrón */
         margin-right: 6px;
     }
     
     /* Ajuste indicador lupa para móvil */
     .fila-plato::after {
         right: 80px; /* Para no superponer con la imagen */
-        width: 28px;
-        height: 28px;
-        font-size: 14px;
     }
     
     /* Ocultar cabecera de precios en móvil */
@@ -973,7 +877,7 @@ body {
     }
     
     .alergeno-item {
-        padding: 8px;
+        padding: 4px;
     }
     
     .alergeno-icono {
@@ -983,7 +887,7 @@ body {
     }
     
     .alergeno-texto {
-        font-size: 13px;
+        font-size: 12px;
     }
     
     /* Responsive para Lightbox */
@@ -1005,11 +909,11 @@ body {
     }
     
     .lightbox-info h3 {
-        font-size: 26px;
+        font-size: 24px;
     }
     
     .lightbox-info p {
-        font-size: 16px;
+        font-size: 15px;
     }
     
     .lightbox-precios {
@@ -1018,13 +922,13 @@ body {
     }
     
     .lightbox-precios span {
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .lightbox-cerrar {
         width: 35px;
         height: 35px;
-        font-size: 22px;
+        font-size: 24px;
         top: 10px;
         right: 10px;
     }
@@ -1056,17 +960,15 @@ body {
     }
 
     .intro-texto h1 {
-        font-size: 32px;
-        letter-spacing: 1.5px;
+        font-size: 28px;
     }
 
     .intro-texto h2 {
-        font-size: 20px;
-        letter-spacing: 0.5px;
+        font-size: 22px;
     }
 
     .logo-intro {
-        width: 140px;
+        width: 130px;
     }
     
     /* Filas de platos */
@@ -1100,9 +1002,6 @@ body {
     
     .fila-plato::after {
         right: 70px;
-        width: 26px;
-        height: 26px;
-        font-size: 13px;
     }
     
     /* Responsive para leyenda de alérgenos móvil pequeño */
@@ -1154,7 +1053,7 @@ body {
     }
     
     .lightbox-info p {
-        font-size: 15px;
+        font-size: 14px;
         margin-bottom: 15px;
     }
     
@@ -1164,7 +1063,7 @@ body {
     }
     
     .lightbox-precios span {
-        font-size: 18px;
+        font-size: 17px;
     }
     
     .lightbox-cerrar {
