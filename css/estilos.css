@@ -217,22 +217,29 @@ body {
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-/* Indicador visual de clic (lupa) */
+/* Indicador visual de clic - LUPA ORIGINAL */
 .fila-plato::after {
-    content: "🥩"; /* Icono de carne en lugar de lupa */
+    content: "🔍"; /* LUPA ORIGINAL RESTAURADA */
     position: absolute;
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
     opacity: 0;
     transition: opacity 0.3s ease;
-    font-size: 18px;
+    font-size: 16px; /* Tamaño original */
     color: #d4a76a;
     z-index: 2;
+    background: rgba(30, 20, 15, 0.7);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .fila-plato:hover::after {
-    opacity: 0.8;
+    opacity: 1;
 }
 
 /* Imagen del plato - ESTILO MARCOS DE MADERA */
@@ -797,7 +804,7 @@ body {
 }
 
 .imagen-plato img[src=""]::after {
-    content: "🥩"; /* Icono de carne */
+    content: "🍽️"; /* Icono de plato original */
     font-size: 28px;
     color: #d4a76a;
 }
@@ -894,9 +901,12 @@ body {
         margin-right: 6px;
     }
     
-    /* Ajuste indicador */
+    /* Ajuste indicador LUPA para móvil */
     .fila-plato::after {
-        right: 80px;
+        right: 80px; /* Para no superponer con la imagen */
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
     }
     
     /* Ocultar cabecera de precios en móvil */
@@ -1046,8 +1056,12 @@ body {
         font-size: 12px;
     }
     
+    /* Ajuste LUPA en móvil pequeño */
     .fila-plato::after {
         right: 70px;
+        width: 26px;
+        height: 26px;
+        font-size: 13px;
     }
     
     /* Responsive para leyenda de alérgenos móvil pequeño */
@@ -1136,67 +1150,15 @@ body {
     .bloque-categoria h2 {
         font-size: 20px;
     }
+    
+    /* Ajuste LUPA en móviles muy pequeños */
+    .fila-plato::after {
+        right: 65px;
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+    }
 }
 
 /* Añadir fuente Playfair Display si es posible */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
-.logo-footer:hover {
-    opacity: 1;
-}
-
-.btn-subir {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background: rgba(1, 161, 219, 0.3);  /* 🔵 azul transparente */
-    color: #01a1db;                       /* 🔵 flecha azul sólida */
-    border: 2px solid #01a1db;            /* 🔵 borde azul bonito */
-    border-radius: 50%;
-    font-size: 22px;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    z-index: 9999;
-    transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease;
-}
-
-.btn-subir:hover {
-    opacity: 1;
-    background: rgba(1, 161, 219, 0.5);   /* un poco menos transparente al pasar */
-    transform: scale(1.1);
-}
-
-/* Más pequeño en móviles */
-@media (max-width: 480px) {
-    .btn-subir {
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
-        bottom: 15px;
-        right: 15px;
-    }
-}
-
-/* Móviles pequeños (≤380px) */
-@media (max-width: 380px) {
-    .logo-footer {
-        width: 150px;
-        max-width: 65%;
-        margin: 20px auto 10px;  /* centrar con margen reforzado */
-    }
-}
-
-/* Ajuste especial para pantallas muy pequeñas */
-@media (max-width: 480px) {
-    .carta-contenedor {
-        padding: 5px;
-    }
-    .carta-imagen {
-        margin-bottom: 15px;
-    }
-}
-
-
