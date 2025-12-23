@@ -8,17 +8,17 @@
 }
 
 /* ============================================================
-   ESTILOS GENERALES - TONOS RÚSTICOS Y TIERRA
+   ESTILOS GENERALES
    ============================================================ */
 body {
-    background: linear-gradient(180deg, #f8f4e9, #e8e0d1);
-    font-family: 'Georgia', 'Times New Roman', serif;
+    background: linear-gradient(180deg, #f6efe6, #e6eeee);
+    font-family: Arial, sans-serif;
     min-height: 100vh;
     padding: 20px;
     position: relative;
 }
 
-/* Contenedor principal - MARRÓN MADERA OSCURO */
+/* Contenedor principal de la carta */
 .carta-contenedor {
     width: 100%;
     max-width: 900px;
@@ -27,18 +27,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #5c4033; /* Marrón madera oscuro */
-    border: 3px solid #8b4513; /* Marrón silla de montar */
+    background: #DAA520;
+    border: 3px solid #8b0000;
     border-radius: 22px;
-    box-shadow: 
-        0 12px 40px rgba(0,0,0,0.4),
-        inset 0 0 20px rgba(0,0,0,0.2);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.6);
     position: relative;
     z-index: 1;
 }
 
 /* ============================================================
-   INTRO PRESENTACIÓN - TONOS RÚSTICOS
+   INTRO PRESENTACIÓN
    ============================================================ */
 .intro-presentacion {
     width: 100%;
@@ -63,20 +61,18 @@ body {
     margin: 0;
     font-family: 'Roboto Condensed', Arial, sans-serif;
     font-weight: 400;
-    letter-spacing: 1px;
-    color: #5c4033; /* Marrón madera oscuro */
+    letter-spacing: 0.5px;
+    color: #2a2a2a;
 }
 
 .intro-texto h1 {
     font-size: 34px;
-    color: #8b4513; /* Marrón silla de montar */
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    color: #0f3f3b;
 }
 
 .intro-texto h2 {
     font-size: 26px;
-    color: #a0522d; /* Marrón tierra */
-    font-style: italic;
+    color: #555;
 }
 
 .logo-intro {
@@ -84,84 +80,67 @@ body {
     max-width: 100%;
     height: auto;
     display: block;
-    border-radius: 8px;
-    border: 2px solid #8b4513;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius:8px;
 }
 
 /* ============================================================
-   CARTA PREMIUM - TONOS BRASA Y CARBÓN
+   CARTA PREMIUM OSCURA
    ============================================================ */
 .carta-premium {
     width: 100%;
     max-width: 860px;
-    background: radial-gradient(circle at top, #3a2c28, #1a1614);
+    background: radial-gradient(circle at top, #6b000a, #2a0004);
     border-radius: 18px;
     padding: 25px;
-    color: #f5e6d3; /* Crema cálido */
+    color: #f2f2f2;
     box-shadow: 
-        inset 0 0 30px rgba(139, 69, 19, 0.2),
+        inset 0 0 30px rgba(255,255,255,0.05),
         0 10px 30px rgba(0,0,0,0.7);
-    font-family: 'Georgia', 'Times New Roman', serif;
-    border: 1px solid #8b4513;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
 }
 
-/* Cabecera de la carta - ESTILO RÚSTICO */
+/* Cabecera de la carta */
 .carta-header {
     text-align: center;
     margin-bottom: 40px;
-    border-bottom: 2px solid #8b4513;
-    padding-bottom: 20px;
 }
 
 .carta-header h1 {
     margin: 0;
-    font-size: 42px;
-    letter-spacing: 3px;
-    color: #d4a76a; /* Dorado cálido */
-    font-family: 'Playfair Display', serif;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-size: 34px;
+    letter-spacing: 2px;
+    color: #ffffff;
 }
 
 .carta-header p {
-    margin: 10px 0 5px;
-    color: #e6b17e; /* Dorado más claro */
-    font-size: 20px;
-    font-style: italic;
+    margin: 5px 0;
+    color: #d6b067;
+    font-size: 18px;
 }
 
 .carta-header span {
-    font-size: 14px;
-    color: #b8a38d;
-    letter-spacing: 1px;
+    font-size: 13px;
+    color: #aaa;
 }
 
-/* Bloques de categoría - TITULOS EN TONO BRASA */
+/* Bloques de categoría (entrantes, platos principales, etc.) */
 .bloque-categoria {
     margin-bottom: 40px;
-    padding: 15px;
-    background: rgba(60, 40, 30, 0.3);
-    border-radius: 12px;
-    border-left: 4px solid #8b4513;
 }
 
 .bloque-categoria h2 {
-    color: #d4a76a; /* Dorado cálido */
-    border-bottom: 2px solid rgba(212, 167, 106, 0.4);
-    padding-bottom: 12px;
-    margin-bottom: 25px;
-    letter-spacing: 2px;
-    font-family: 'Playfair Display', serif;
-    font-size: 26px;
-    text-transform: uppercase;
+    color: #d6b067;
+    border-bottom: 2px solid rgba(214,176,103,0.4);
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
 }
 
 /* ============================================================
    ESTRUCTURA DE PRECIOS Y ALINEACIÓN
    ============================================================ */
 
-/* Cabecera con precios */
+/* Cabecera con precios (Tapa/Ración) */
 .cabecera-precios {
     display: flex;
     justify-content: space-between;
@@ -180,10 +159,9 @@ body {
     gap: 40px;
     font-size: 13px;
     letter-spacing: 1px;
-    color: #b8a38d; /* Gris marrón claro */
+    color: #aaa;
     justify-content: flex-end;
     min-width: 150px;
-    font-style: italic;
 }
 
 .col-precios span {
@@ -196,65 +174,55 @@ body {
    ESTRUCTURA DE FILAS CON IMÁGENES (PLATOS)
    ============================================================ */
 
-/* Fila individual de cada plato - ESTILO RÚSTICO */
+/* Fila individual de cada plato - CLICABLE */
 .fila-plato {
     display: flex;
     align-items: flex-start;
     gap: 15px;
-    padding: 15px 10px;
-    border-bottom: 1px solid rgba(139, 69, 19, 0.3);
+    padding: 12px 5px;
+    border-bottom: 1px dashed rgba(255,255,255,0.15);
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
-    background: rgba(40, 30, 25, 0.2);
-    border-radius: 8px;
-    margin-bottom: 5px;
 }
 
 .fila-plato:hover {
-    background: rgba(60, 40, 30, 0.4);
-    transform: translateX(5px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-/* Indicador visual de clic - LUPA ORIGINAL */
+/* Indicador visual de clic (lupa) */
 .fila-plato::after {
-    content: "🔍"; /* LUPA ORIGINAL RESTAURADA */
+    content: "🔍";
     position: absolute;
     right: 10px;
     top: 50%;
     transform: translateY(-50%);
     opacity: 0;
     transition: opacity 0.3s ease;
-    font-size: 16px; /* Tamaño original */
-    color: #d4a76a;
+    font-size: 14px;
+    color: #d6b067;
     z-index: 2;
-    background: rgba(30, 20, 15, 0.7);
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .fila-plato:hover::after {
-    opacity: 1;
+    opacity: 0.7;
 }
 
-/* Imagen del plato - ESTILO MARCOS DE MADERA */
+/* Imagen del plato - IZQUIERDA EN PC */
 .imagen-plato {
-    width: 90px;
-    height: 90px;
-    min-width: 90px;
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-    border: 2px solid #8b4513;
-    order: 1;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    border: 2px solid rgba(214,176,103,0.3);
+    order: 1; /* Primera posición en PC */
     position: relative;
     z-index: 1;
-    background: #2a201c;
 }
 
 .imagen-plato img {
@@ -269,56 +237,52 @@ body {
     transform: scale(1.05);
 }
 
-/* Información del plato - TEXTO CREMA */
+/* Información del plato (nombre y descripción) */
 .info-plato {
     flex: 1;
     max-width: calc(100% - 250px);
-    order: 2;
+    order: 2; /* Segunda posición en PC */
     position: relative;
     z-index: 1;
 }
 
 .fila-plato strong {
-    font-size: 18px;
-    color: #f5e6d3; /* Crema cálido */
+    font-size: 17px;
+    color: #ffffff;
     display: block;
-    font-family: 'Georgia', serif;
-    margin-bottom: 5px;
 }
 
 .fila-plato p {
     margin: 4px 0 0;
     font-size: 14px;
-    color: #d4c4b4; /* Crema más oscuro */
-    line-height: 1.5;
-    font-style: italic;
+    color: #bbb;
+    line-height: 1.4;
 }
 
-/* Precios - DORADO CÁLIDO */
+/* Precios - DERECHA EN PC */
 .precios {
     display: flex;
     gap: 40px;
     justify-content: flex-end;
     min-width: 150px;
     text-align: right;
-    order: 3;
+    order: 3; /* Tercera posición en PC */
     position: relative;
     z-index: 1;
 }
 
 .precios span {
     font-weight: bold;
-    color: #d4a76a; /* Dorado cálido */
-    font-size: 18px;
+    color: #01a1db;
+    font-size: 16px;
     white-space: nowrap;
     width: 60px;
     display: inline-block;
     text-align: center;
-    font-family: 'Georgia', serif;
 }
 
 /* ============================================================
-   SISTEMA DE ALÉRGENOS EN PLATOS - TONOS TIERRA
+   SISTEMA DE ALÉRGENOS EN PLATOS
    ============================================================ */
 .alergenos-plato {
     display: flex;
@@ -333,15 +297,14 @@ body {
     justify-content: center;
     width: 22px;
     height: 22px;
-    background: #8b4513; /* Marrón silla de montar */
-    color: #f5e6d3;
+    background: #e74c3c;
+    color: white;
     border-radius: 50%;
     font-size: 11px;
     font-weight: bold;
     cursor: help;
     transition: transform 0.2s ease;
     position: relative;
-    border: 1px solid #a0522d;
 }
 
 .alergeno-mini:hover {
@@ -356,10 +319,10 @@ body {
     bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(60, 40, 30, 0.95);
-    color: #f5e6d3;
-    padding: 8px 12px;
-    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
     font-size: 12px;
     white-space: nowrap;
     opacity: 0;
@@ -367,7 +330,6 @@ body {
     transition: opacity 0.3s ease;
     z-index: 10;
     pointer-events: none;
-    border: 1px solid #8b4513;
 }
 
 .alergeno-mini:hover::after {
@@ -375,121 +337,116 @@ body {
     visibility: visible;
 }
 
-/* Colores específicos para cada alérgeno - TONOS TIERRA */
-.alergeno-mini[data-alergeno="gluten"] { background: #8b4513; }
-.alergeno-mini[data-alergeno="crustaceos"] { background: #a0522d; }
-.alergeno-mini[data-alergeno="huevo"] { background: #d2691e; }
-.alergeno-mini[data-alergeno="pescado"] { background: #cd853f; }
-.alergeno-mini[data-alergeno="cacahuetes"] { background: #8b7355; }
-.alergeno-mini[data-alergeno="soja"] { background: #b8860b; }
-.alergeno-mini[data-alergeno="lacteos"] { background: #daa520; }
-.alergeno-mini[data-alergeno="frutos-cascara"] { background: #8b4513; }
-.alergeno-mini[data-alergeno="apio"] { background: #a0522d; }
-.alergeno-mini[data-alergeno="mostaza"] { background: #d2691e; }
-.alergeno-mini[data-alergeno="sesamo"] { background: #cd853f; }
-.alergeno-mini[data-alergeno="sulfitos"] { background: #8b7355; }
-.alergeno-mini[data-alergeno="altramuces"] { background: #b8860b; }
-.alergeno-mini[data-alergeno="moluscos"] { background: #daa520; }
+/* Colores específicos para cada alérgeno */
+.alergeno-mini[data-alergeno="gluten"] { background: #e74c3c; }
+.alergeno-mini[data-alergeno="crustaceos"] { background: #3498db; }
+.alergeno-mini[data-alergeno="huevo"] { background: #f39c12; }
+.alergeno-mini[data-alergeno="pescado"] { background: #1abc9c; }
+.alergeno-mini[data-alergeno="cacahuetes"] { background: #8e44ad; }
+.alergeno-mini[data-alergeno="soja"] { background: #d35400; }
+.alergeno-mini[data-alergeno="lacteos"] { background: #2ecc71; }
+.alergeno-mini[data-alergeno="frutos-cascara"] { background: #9b59b6; }
+.alergeno-mini[data-alergeno="apio"] { background: #27ae60; }
+.alergeno-mini[data-alergeno="mostaza"] { background: #e67e22; }
+.alergeno-mini[data-alergeno="sesamo"] { background: #16a085; }
+.alergeno-mini[data-alergeno="sulfitos"] { background: #c0392b; }
+.alergeno-mini[data-alergeno="altramuces"] { background: #8e44ad; }
+.alergeno-mini[data-alergeno="moluscos"] { background: #2980b9; }
 
 /* ============================================================
-   LEYENDA DE ALÉRGENOS - ESTILO RÚSTICO
+   LEYENDA DE ALÉRGENOS
    ============================================================ */
 .alergenos-leyenda {
-    background: rgba(60, 40, 30, 0.9);
+    background: rgba(43, 26, 16, 0.9);
     border-radius: 12px;
-    padding: 25px;
+    padding: 20px;
     margin: 30px auto;
     max-width: 860px;
     width: 100%;
-    border: 2px solid #8b4513;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    border: 2px solid rgba(214, 176, 103, 0.3);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .alergenos-leyenda h3 {
-    color: #d4a76a;
-    margin: 0 0 20px 0;
-    font-size: 20px;
-    font-family: 'Georgia', serif;
+    color: #d6b067;
+    margin: 0 0 15px 0;
+    font-size: 18px;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
     text-align: center;
-    border-bottom: 2px solid rgba(212, 167, 106, 0.4);
-    padding-bottom: 12px;
-    letter-spacing: 1px;
+    border-bottom: 1px dashed rgba(214, 176, 103, 0.4);
+    padding-bottom: 10px;
 }
 
 .alergenos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
-    margin-bottom: 20px;
+    gap: 12px;
+    margin-bottom: 15px;
 }
 
 .alergeno-item {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 10px;
-    border-radius: 8px;
-    background: rgba(40, 30, 25, 0.5);
-    transition: all 0.3s ease;
-    border: 1px solid rgba(139, 69, 19, 0.3);
+    gap: 10px;
+    padding: 5px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    transition: background 0.3s ease;
 }
 
 .alergeno-item:hover {
-    background: rgba(60, 40, 30, 0.7);
-    transform: translateX(3px);
+    background: rgba(255, 255, 255, 0.1);
 }
 
 .alergeno-icono {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 28px;
-    height: 28px;
-    background: #8b4513;
-    color: #f5e6d3;
+    width: 26px;
+    height: 26px;
+    background: #01a1db;
+    color: white;
     border-radius: 50%;
     font-size: 14px;
     font-weight: bold;
     flex-shrink: 0;
-    border: 1px solid #a0522d;
 }
 
 /* Colores específicos para cada alérgeno (leyenda) */
-.alergeno-icono[data-alergeno="gluten"] { background: #8b4513; }
-.alergeno-icono[data-alergeno="crustaceos"] { background: #a0522d; }
-.alergeno-icono[data-alergeno="huevo"] { background: #d2691e; }
-.alergeno-icono[data-alergeno="pescado"] { background: #cd853f; }
-.alergeno-icono[data-alergeno="cacahuetes"] { background: #8b7355; }
-.alergeno-icono[data-alergeno="soja"] { background: #b8860b; }
-.alergeno-icono[data-alergeno="lacteos"] { background: #daa520; }
-.alergeno-icono[data-alergeno="frutos-cascara"] { background: #8b4513; }
-.alergeno-icono[data-alergeno="apio"] { background: #a0522d; }
-.alergeno-icono[data-alergeno="mostaza"] { background: #d2691e; }
-.alergeno-icono[data-alergeno="sesamo"] { background: #cd853f; }
-.alergeno-icono[data-alergeno="sulfitos"] { background: #8b7355; }
-.alergeno-icono[data-alergeno="altramuces"] { background: #b8860b; }
-.alergeno-icono[data-alergeno="moluscos"] { background: #daa520; }
+.alergeno-icono[data-alergeno="gluten"] { background: #e74c3c; }
+.alergeno-icono[data-alergeno="crustaceos"] { background: #3498db; }
+.alergeno-icono[data-alergeno="huevo"] { background: #f39c12; }
+.alergeno-icono[data-alergeno="pescado"] { background: #1abc9c; }
+.alergeno-icono[data-alergeno="cacahuetes"] { background: #8e44ad; }
+.alergeno-icono[data-alergeno="soja"] { background: #d35400; }
+.alergeno-icono[data-alergeno="lacteos"] { background: #2ecc71; }
+.alergeno-icono[data-alergeno="frutos-cascara"] { background: #9b59b6; }
+.alergeno-icono[data-alergeno="apio"] { background: #27ae60; }
+.alergeno-icono[data-alergeno="mostaza"] { background: #e67e22; }
+.alergeno-icono[data-alergeno="sesamo"] { background: #16a085; }
+.alergeno-icono[data-alergeno="sulfitos"] { background: #c0392b; }
+.alergeno-icono[data-alergeno="altramuces"] { background: #8e44ad; }
+.alergeno-icono[data-alergeno="moluscos"] { background: #2980b9; }
 
 .alergeno-texto {
-    color: #e6d5c3;
-    font-size: 14px;
-    line-height: 1.4;
-    font-family: 'Georgia', serif;
+    color: #ddd;
+    font-size: 13px;
+    line-height: 1.3;
 }
 
 .alergeno-nota {
-    color: #b8a38d;
-    font-size: 13px;
+    color: #aaa;
+    font-size: 12px;
     text-align: center;
-    margin: 20px 0 0 0;
+    margin: 15px 0 0 0;
     font-style: italic;
-    line-height: 1.5;
+    line-height: 1.4;
     padding-top: 15px;
-    border-top: 1px solid rgba(139, 69, 19, 0.3);
+    border-top: 1px dashed rgba(255, 255, 255, 0.1);
 }
 
 /* ============================================================
-   LIGHTBOX - TONOS BRASA Y MADERA
+   LIGHTBOX PARA IMÁGENES AMPLIADAS
    ============================================================ */
 
 /* Fondo oscuro del lightbox */
@@ -499,7 +456,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(30, 20, 15, 0.95);
+    background-color: rgba(0, 0, 0, 0.95);
     display: none;
     justify-content: center;
     align-items: center;
@@ -515,19 +472,17 @@ body {
     opacity: 1;
 }
 
-/* Contenedor del contenido - ESTILO MADERA */
+/* Contenedor del contenido */
 .lightbox-contenido {
-    background: linear-gradient(180deg, #3a2c28, #2a201c);
+    background: linear-gradient(180deg, #2b1a10, #050301);
     border-radius: 20px;
     max-width: 800px;
     width: 90%;
     max-height: 90vh;
     overflow: hidden;
     position: relative;
-    box-shadow: 
-        0 20px 50px rgba(0, 0, 0, 0.8),
-        inset 0 0 0 2px #8b4513;
-    border: 3px solid #5c4033;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(214, 176, 103, 0.3);
     animation: lightboxAparece 0.4s ease forwards;
     transform-origin: center;
 }
@@ -543,18 +498,18 @@ body {
     }
 }
 
-/* Botón cerrar - ESTILO HIERRO FORJADO */
+/* Botón cerrar */
 .lightbox-cerrar {
     position: absolute;
     top: 15px;
     right: 15px;
-    background: rgba(60, 40, 30, 0.9);
-    color: #d4a76a;
-    border: 2px solid #8b4513;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border: none;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    font-size: 24px;
+    font-size: 28px;
     cursor: pointer;
     z-index: 10001;
     transition: all 0.3s ease;
@@ -565,19 +520,17 @@ body {
 }
 
 .lightbox-cerrar:hover {
-    background: rgba(139, 69, 19, 0.9);
-    color: #f5e6d3;
+    background: rgba(214, 176, 103, 0.9);
     transform: rotate(90deg);
 }
 
-/* Contenedor de la imagen - MARCO DE MADERA */
+/* Contenedor de la imagen */
 .lightbox-imagen-contenedor {
     width: 100%;
     height: 60vh;
     overflow: hidden;
-    background: #2a201c;
+    background: #000;
     position: relative;
-    border-bottom: 3px solid #8b4513;
 }
 
 .lightbox-imagen-contenedor img {
@@ -594,58 +547,52 @@ body {
 
 /* Información del plato */
 .lightbox-info {
-    padding: 30px;
-    color: #f5e6d3;
-    background: linear-gradient(0deg, #2a201c 0%, #3a2c28 100%);
+    padding: 25px;
+    color: white;
+    background: linear-gradient(0deg, rgba(5,3,1,1) 0%, rgba(43,26,16,0.9) 100%);
 }
 
 .lightbox-info h3 {
-    margin: 0 0 15px 0;
-    font-size: 32px;
-    color: #d4a76a;
-    font-family: 'Playfair Display', serif;
+    margin: 0 0 10px 0;
+    font-size: 28px;
+    color: #d6b067;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
     font-weight: 400;
-    border-bottom: 2px solid rgba(212, 167, 106, 0.3);
-    padding-bottom: 10px;
 }
 
 .lightbox-info p {
-    margin: 0 0 25px 0;
-    color: #d4c4b4;
-    font-size: 18px;
-    line-height: 1.6;
-    font-style: italic;
-    font-family: 'Georgia', serif;
+    margin: 0 0 20px 0;
+    color: #bbb;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 /* Precios en el lightbox */
 .lightbox-precios {
     display: flex;
     gap: 40px;
-    margin-top: 25px;
+    margin-top: 20px;
     padding-top: 20px;
-    border-top: 2px solid rgba(139, 69, 19, 0.3);
+    border-top: 1px dashed rgba(255, 255, 255, 0.2);
 }
 
 .lightbox-precios span {
-    font-size: 22px;
-    color: #d4a76a;
+    font-size: 20px;
+    color: #01a1db;
     font-weight: bold;
     display: flex;
     align-items: center;
-    font-family: 'Georgia', serif;
 }
 
 .lightbox-precios span::before {
     content: attr(data-tipo) ": ";
-    font-size: 16px;
-    color: #b8a38d;
+    font-size: 14px;
+    color: #d6b067;
     font-weight: normal;
-    margin-right: 10px;
-    font-style: italic;
+    margin-right: 8px;
 }
 
-/* Ajuste para postres */
+/* Ajuste para postres (un solo precio) */
 .lightbox-precios.postre {
     justify-content: flex-start;
     gap: 0;
@@ -656,7 +603,7 @@ body {
 }
 
 /* ============================================================
-   BOTONES DE CONTACTO - TONOS TIERRA
+   BOTONES DE CONTACTO
    ============================================================ */
 .contacto-botones {
     display: flex;
@@ -670,57 +617,51 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 16px 24px;
+    padding: 14px 22px;
     border-radius: 12px;
-    color: #f5e6d3;
+    color: white;
     text-decoration: none;
-    font-family: 'Georgia', serif;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
-    gap: 12px;
-    transition: all 0.3s ease;
+    gap: 10px;
+    transition: 0.2s ease;
     cursor: pointer;
     border: none;
     outline: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    letter-spacing: 0.5px;
 }
 
 .btn-telefono { 
-    background: linear-gradient(135deg, #8b4513, #5c4033);
-    border: 2px solid #a0522d;
+    background-color: #0f3f3b; 
 }
 
 .btn-whatsapp2 { 
-    background: linear-gradient(135deg, #25d366, #128c7e);
-    border: 2px solid #25d366;
+    background-color: #25d366; 
 }
 
 .icono-svg svg {
     width: 22px;
     height: 22px;
-    fill: #f5e6d3;
+    fill: white;
 }
 
 .btn-contacto:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.4);
-    opacity: 0.95;
+    opacity: 0.9;
+    transform: scale(1.03);
 }
 
 /* ============================================================
-   FECHA AUTOMÁTICA - TONO DORADO
+   FECHA AUTOMÁTICA
    ============================================================ */
 .fecha-actualizacion {
     width: 100%;
     text-align: center;
-    color: #d4a76a;
-    font-size: 15px;
+    color: #01a1db;
+    font-size: 14px;
     margin: 10px auto;
-    font-family: 'Georgia', serif;
+    font-family: 'Roboto Condensed', Arial, sans-serif;
     font-weight: 300;
-    letter-spacing: 1px;
-    font-style: italic;
+    letter-spacing: 0.5px;
 }
 
 /* ============================================================
@@ -730,7 +671,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -743,16 +684,14 @@ body {
     transition: 0.3s ease;
     display: block;
     margin: 0 auto;
-    filter: sepia(0.3);
 }
 
 .logo-footer:hover {
     opacity: 1;
-    filter: sepia(0);
 }
 
 /* ============================================================
-   BOTÓN SUBIR - TONOS BRASA
+   BOTÓN SUBIR
    ============================================================ */
 .btn-subir {
     position: fixed;
@@ -760,9 +699,9 @@ body {
     right: 20px;
     width: 50px;
     height: 50px;
-    background: rgba(139, 69, 19, 0.8);
-    color: #f5e6d3;
-    border: 2px solid #d4a76a;
+    background: rgba(1, 161, 219, 0.3);
+    color: #01a1db;
+    border: 2px solid #01a1db;
     border-radius: 50%;
     font-size: 22px;
     display: none;
@@ -770,13 +709,14 @@ body {
     align-items: center;
     cursor: pointer;
     z-index: 9999;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: 0.3s ease;
+    border: none;
+    outline: none;
 }
 
 .btn-subir:hover {
-    background: rgba(212, 167, 106, 0.9);
-    color: #5c4033;
+    opacity: 1;
+    background: rgba(1, 161, 219, 0.5);
     transform: scale(1.1);
 }
 
@@ -784,12 +724,12 @@ body {
    MEJORAS DE ACCESIBILIDAD
    ============================================================ */
 .fila-plato:focus {
-    outline: 2px solid #d4a76a;
+    outline: 2px solid #01a1db;
     outline-offset: 2px;
 }
 
 .lightbox-cerrar:focus {
-    outline: 2px solid #d4a76a;
+    outline: 2px solid #01a1db;
     outline-offset: 2px;
 }
 
@@ -797,16 +737,16 @@ body {
    ESTILOS PARA IMÁGENES FALTANTES
    ============================================================ */
 .imagen-plato img[src=""] {
-    background: linear-gradient(45deg, #3a2c28, #5c4033);
+    background: linear-gradient(45deg, #2b1a10, #4a2412);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .imagen-plato img[src=""]::after {
-    content: "🍽️"; /* Icono de plato original */
-    font-size: 28px;
-    color: #d4a76a;
+    content: "🍽️";
+    font-size: 24px;
+    color: #d6b067;
 }
 
 /* ============================================================
@@ -818,7 +758,6 @@ body {
     /* General */
     body {
         padding: 10px;
-        background: #f8f4e9;
     }
     
     .carta-contenedor {
@@ -831,30 +770,18 @@ body {
         padding: 15px;
     }
     
-    .carta-header h1 {
-        font-size: 34px;
-    }
-    
-    .carta-header p {
-        font-size: 18px;
-    }
-    
-    .bloque-categoria h2 {
-        font-size: 22px;
-    }
-    
-    /* Reordenación para móvil */
+    /* Reordenación para móvil: Imagen a la DERECHA */
     .fila-plato {
         flex-wrap: nowrap;
         gap: 12px;
         align-items: center;
         position: relative;
-        padding-right: 90px;
+        padding-right: 90px; /* Espacio para imagen derecha */
     }
     
     /* Imagen pasa a la DERECHA en móvil */
     .imagen-plato {
-        order: 3;
+        order: 3; /* Última posición en móvil */
         position: absolute;
         right: 0;
         top: 50%;
@@ -883,30 +810,27 @@ body {
     .precios span {
         width: auto;
         text-align: left;
-        font-size: 16px;
+        font-size: 15px;
     }
     
     /* Etiquetas TAPA/RACIÓN en móvil */
     .precios span:nth-child(1)::before {
         content: "Tapa: ";
         font-size: 13px;
-        color: #d4a76a;
+        color: #d6b067;
         margin-right: 6px;
     }
     
     .precios span:nth-child(2)::before {
         content: "Ración: ";
         font-size: 13px;
-        color: #d4a76a;
+        color: #d6b067;
         margin-right: 6px;
     }
     
-    /* Ajuste indicador LUPA para móvil */
+    /* Ajuste indicador lupa para móvil */
     .fila-plato::after {
         right: 80px; /* Para no superponer con la imagen */
-        width: 28px;
-        height: 28px;
-        font-size: 14px;
     }
     
     /* Ocultar cabecera de precios en móvil */
@@ -933,7 +857,7 @@ body {
     }
     
     .alergeno-item {
-        padding: 8px;
+        padding: 4px;
     }
     
     .alergeno-icono {
@@ -943,7 +867,7 @@ body {
     }
     
     .alergeno-texto {
-        font-size: 13px;
+        font-size: 12px;
     }
     
     /* Responsive para Lightbox */
@@ -965,11 +889,11 @@ body {
     }
     
     .lightbox-info h3 {
-        font-size: 26px;
+        font-size: 24px;
     }
     
     .lightbox-info p {
-        font-size: 16px;
+        font-size: 15px;
     }
     
     .lightbox-precios {
@@ -978,13 +902,13 @@ body {
     }
     
     .lightbox-precios span {
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .lightbox-cerrar {
         width: 35px;
         height: 35px;
-        font-size: 22px;
+        font-size: 24px;
         top: 10px;
         right: 10px;
     }
@@ -1049,19 +973,15 @@ body {
     }
     
     .precios span {
-        font-size: 15px;
+        font-size: 14px;
     }
     
     .precios span::before {
         font-size: 12px;
     }
     
-    /* Ajuste LUPA en móvil pequeño */
     .fila-plato::after {
         right: 70px;
-        width: 26px;
-        height: 26px;
-        font-size: 13px;
     }
     
     /* Responsive para leyenda de alérgenos móvil pequeño */
@@ -1113,7 +1033,7 @@ body {
     }
     
     .lightbox-info p {
-        font-size: 15px;
+        font-size: 14px;
         margin-bottom: 15px;
     }
     
@@ -1123,7 +1043,7 @@ body {
     }
     
     .lightbox-precios span {
-        font-size: 18px;
+        font-size: 17px;
     }
     
     .lightbox-cerrar {
@@ -1142,23 +1062,4 @@ body {
         max-width: 65%;
         margin: 20px auto 10px;
     }
-    
-    .carta-header h1 {
-        font-size: 28px;
-    }
-    
-    .bloque-categoria h2 {
-        font-size: 20px;
-    }
-    
-    /* Ajuste LUPA en móviles muy pequeños */
-    .fila-plato::after {
-        right: 65px;
-        width: 24px;
-        height: 24px;
-        font-size: 12px;
-    }
 }
-
-/* Añadir fuente Playfair Display si es posible */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
